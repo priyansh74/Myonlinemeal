@@ -1,0 +1,83 @@
+@import "colours";
+@import "nav-bar";
+@import "home";
+@import "services";
+@import "clients";
+@import "contact";
+@import "footer";
+
+/*css reset*/
+*{
+  margin: 0;
+  padding: 0;
+ body{
+    font-size: 14px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*creating utility classes*/
+.head-h1{
+  font-size: 3rem;
+  padding:0.9rem;
+  font-family: 'Bree Serif', serif; 
+}
+.head-h2{
+  font-size: 1.8rem;
+  padding:0.7rem;
+  
+  font-family: 'Bree Serif', serif;
+}
+
+.center{
+  text-align: center;
+}
+html{
+  scroll-behavior: smooth;
+}
+/*utility classes end*/
+

@@ -1,0 +1,77 @@
+@import "colours";
+
+#contact{
+ position: relative;
+    h1{
+        @extend .head-h1;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2.2rem;
+        form{
+            width: 40%;
+            .form-group{
+            
+                label{
+                  font-size: 1.25rem;
+                  font-family: 'Bree Serif', serif;
+                }
+                input{
+                   width: 100%;
+                   padding:0.55rem;
+                   border-radius: 0.75rem;
+                   font-size: 1rem;
+                   border:1px solid $white;
+                }
+                #message{
+                  width: 100%;
+                  padding:0.55rem;
+                  border-radius: 0.7rem;
+                   font-size: 1rem;
+                   font-family: 'Bree Serif', serif;
+                }
+                .submit-btn{
+                    border:1px solid $white;
+                    background-color: $brown;
+                    color:$white;
+                    padding:0.5rem 1rem;
+                    margin:1rem 0;
+                    font-size: 1rem;
+                    border-radius: 0.8rem;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/contact.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+@media (max-width:1000px)
+{
+#contact{
+    position: relative;
+       h1{
+            font-size: 1.5rem!important;
+        }
+       #contact-box{
+             form{
+                 width:65%;
+             }          
+           
+       }
+   }
+}
